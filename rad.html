@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to Diabetes Prediction</title>
+    <style>
+        body{
+            
+            background-image:  url("C:/Users/MicroMedia/Anaconda3/dm project/static/dia.jpg" );
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+<center><h1> Diabetes Prediction Portal</h1></center><br><br><br><br>
+<form action="/predict" method="post">
+    <label>Enter BMI(Body Mass Index):</label><input type="text" name="bmi" placeholder="BMI(Body Mass Index)" required>
+    <label>Enter BP(Body Pressure):</label><input type="text" name="bp" placeholder="BP(Blood Pressure)" required>
+    <label>Enter Glucose Level:</label><input type="text" name="glucose" placeholder="Glucose" required>
+    <label>Enter Insulin Level:</label><input type="text" name="insulin" placeholder="Insulin Level" required><br><br><br><br>
+    <button type="submit"><center>predict</center></button>
+</form><br><br><br>
+{{pred_text}}
+{{pred_text1}}
+   <!-- <center><h1>Your Result:</h1><strong><i>Positive!! You have diabetes</i></strong></center><br><br>-->
+  <!-- <center><h2>Your Result:</h2><strong><i>Negative!! You do not have diabetes<br>Probability that you will have diabetes in future:{{ prob }}&percnt;</i></strong></center><br>-->
+
+
+</body>
+</html>
